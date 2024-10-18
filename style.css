@@ -1,0 +1,173 @@
+body{
+    
+    text-align: center;
+}
+header {
+  background-color: #96959b;
+  display: flex;
+  font-family: 'Times New Roman', Times, serif;
+  position: fixed;  /*Permite que el header se que estatico y siempre se mantenga en el mismo lugar incluso despues de hacer scrool en la página*/
+  top: 0;
+  width: 100%;  
+  z-index: 100;
+  height:50px;
+  
+}
+.contenedor1{
+  background: whitesmoke;
+  width: 209vh;
+ 
+}
+.contenedor1 input{
+  width: 50%;
+  padding: 10px;
+  margin: 10px 0;
+  background-color:#b0d4a8;
+  border-radius: 5px;
+
+  
+}
+.botones {
+    padding:20px;
+    margin: 10px 10%;
+    box-sizing: border-box;
+    border-radius: 15px
+  
+}
+/*Estilos para el logo*/
+.enlace{
+  position: relative;
+  left: 2rem;
+}
+
+/* Estilos para la navegación */
+nav ul {
+  list-style: none;
+  display: flex;
+  gap: 20px;
+  align-items: center;
+  position: relative;  /*Permite que el elemento se posicione y sea más mas facil de mover en este caso para la derecha*/
+  left: 13em;   
+  height:10px;
+
+}
+nav li {
+  margin-right: 20px;
+  color:#828186;
+  transition: .5s;
+  
+}
+
+nav li:last-child {
+  margin-right: 60px
+  ;
+}
+
+nav a {
+  color:#f6f0f0;
+  text-decoration: none;
+  font-weight: bold;
+  font-size:x-large;
+    
+}
+
+nav ul li {
+  display: inline-block;
+
+}
+  h1{
+    background: rgb(133, 55, 55);
+    height: 60px;
+    text-align: center;
+    font-size: xx-large;
+    font-family: "Protest Strike", serif;
+  
+    }
+    contenedor{
+      background: #f5eeee;
+      display: flex;
+      position: fixed;  /*Permite que el header se que estatico y siempre se mantenga en el mismo lugar incluso despues de hacer scrool en la página*/
+       top: 0;
+       width: 100%;  
+       z-index: 100;
+      height:60px;
+    }
+
+    /* Estilos para el botón de menú */
+.checkbtn {
+  font-size: 30px;
+  color: #e7dede;
+  cursor: pointer;
+  display: none;
+}
+/* Estilos para el menú desplegable en pantallas pequeñas */
+@media (max-width: 858px) {
+  .checkbtn {
+      display: block;
+      position: fixed;
+      top: 40px;
+      right: 20px;
+      margin-right: 3rem;
+  }
+
+  header nav ul {
+      display: flex;
+      flex-direction: column;
+      gap: 1em;
+      position: fixed;
+      top: 60px;
+      left: 0;
+      width: 100%;
+      height: 30vh;
+      background-color: gray;
+      padding: 1em;
+      transform: translateY(-100%);
+      transition: transform 0.3s ease;
+  }
+
+  nav ul.show {
+      transform: translateY(0);
+  }
+
+  nav li {
+      margin-right: 0;
+  }
+
+  nav a {
+      font-size: 3.9em;
+  }
+
+  #check:checked ~ nav ul {
+      transform: translateY(0);
+  }
+}
+    footer {
+      background: #1e1c1c;
+      color: #f5eeee;
+      text-align: center;
+      position: fixed;
+      bottom: 0;
+      width: 100%;
+      height: 40px;
+  }
+.slide{
+  margin-top: 10px;
+}
+.slide img{
+  height: 75vh;
+  
+}
+
+
+.card-img-top{
+ height:80vh;
+ width: 100px;
+}
+.card-img{
+  height:70vh;
+ width: 50vh;
+}
+.card-imge{
+  height:70vh;
+ width: 50vh;
+}

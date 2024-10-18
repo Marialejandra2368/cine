@@ -1,0 +1,579 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="icon" href="img/lentes.png" > 
+    <link rel="icon" href="img/lentes.png" type="image/x-icon">
+    <link href="https://fonts.googleapis.com/css2?family=Protest+Strike&display=swap" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <title>Cine</title>
+</head>
+<body>
+ 
+  <header>
+    <input type="checkbox" id="check">
+    <label for="check" class="checkbtn">
+        <i class="fas fa-bars"></i>
+    </label>
+    <div>
+        <a href="#" class="enlace">
+            <img src="img/logo.png" alt="" class="logo" width="100px" height="50px">
+        </a>
+    </div>
+    <nav id="navbar" class="navbar">
+        <ul>
+            <li><a href="#home">Home</a></li>
+            <li><a href="#Peliculas">Peliculas</a></li>
+            <li><a href="#Actores">Actores</a></li>
+            <li><a href="Generos">Generos</a></li>
+            <li><a href="#contacto">contacto</a></li>
+        </ul>
+    </nav>
+</header>
+
+  <div id="carouselExampleIndicators" class="carousel slide">
+    <div class="carousel-indicators">
+      <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+      <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+      <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+    </div>
+    <div class="carousel-inner">
+      <div class="carousel-item active">
+        <img src="img/beetlejuice-beetlejuice-ver11-xlg-1721400662736.jpg" class="d-block w-100" alt="...">
+      </div>
+      <div class="carousel-item">
+        <img src="img/profecia.jpeg" class="d-block w-100 " alt="...">
+      </div>
+      <div class="carousel-item">
+        <img src="img/circulojpg.jpg" class="d-block w-100" alt="...">
+      </div>
+    </div>
+    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Previous</span>
+    </button>
+    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Next</span>
+    </button>
+  </div>
+  
+
+
+<section>
+  <div class="contenedor1" id="Peliculas">
+    <h1>Peliculas</h1>
+
+      
+      <input type="number" id="edad" placeholder="Ingresa tu edad">
+
+      <div class="botones">
+          <button onclick="pelicularecomendada('comedia')">Comedia</button>
+          <button onclick="pelicularecomendada('crimen')">Crimen</button>
+          <button onclick="pelicularecomendada('drama')">Drama</button>
+          <button onclick="pelicularecomendada('musical')">Musical</button>
+      </div>
+
+      <h2 id="recomendacion"></h2>
+  </div>
+
+  <script src="script.js"></script>
+<br>
+<br>
+<br>
+  <div class="card-group contenedor-tarjetas">
+    <div class="card tarjeta">
+      <img src="img/backf.jpeg" class="card-img-top" alt="...">
+      <div class="card-body">
+        <h5 class="card-title">Back to the future </h5>
+        <p class="card-text">En la década de 1980, un experimento de un científico extraño resulta ser defectuoso. Esto lleva a su amigo adolescente a retroceder en el tiempo hasta la década de 1950, donde se ve obligado a reunir a la versión más joven de sus padres.<br>
+          Fecha de estreno : 10 de julio de 1986 ( Colombia )<br>
+          Director : Robert Zemeckis<br>
+          Distribuida por : Universal Pictures , Universal Pictures Home Entertainment<br>
+          Taquilla : 388,8 millones de dólares<br>
+          Fotografía : Dean Cundey<br>
+          Música de : Alan Silvestri</p>
+        <p class="card-text"><small class="text-body-secondary">Duracion: 1h 56min </small></p>
+      </div>
+    </div>
+    <div class="card">
+      <img src="img/truman.jpeg" class="card-img-top" alt="...">
+      <div class="card-body">
+        <h5 class="card-title">The truman show </h5>
+        <p class="card-text">Un vendedor de seguros no se da cuenta de que toda su vida es un programa de televisión y que los miembros de su familia son meros actores. Cuando empieza a notar cosas y descubre la verdad, decide escapar.<br>
+          Fecha de estreno : 12 de marzo de 1999 ( Colombia )<br>
+          Director : Peter Weir<br>
+          Distribuida por : Paramount Pictures<br>
+          Taquilla : 264,1 millones de dólares<br>
+          Música de : Burkhard Dallwitz ; Philip Glass ; Wojciech Kilar<br>
+          Compañía productora : Scott Rudin Productions.</p>
+        <p class="card-text"><small class="text-body-secondary">Duracion: 1h 43min</small></p>
+      </div>
+    </div>
+    <div class="card">
+      <img src="img/the wolf.jpg" class="card-img-top" alt="...">
+      <div class="card-body">
+        <h5 class="card-title">The wolf of wall Street </h5>
+        <p class="card-text">Jordan Belfort, que se inicia en la vida a toda velocidad gracias al corretaje de bolsa, sufre un duro golpe tras el desplome de Wall Street. Se asocia con Donnie Azoff y hace trampas para llegar a la cima mientras sus relaciones se deterioran.<br>
+          Fecha de estreno : 24 de enero de 2014 ( Colombia )<br>
+          Director : Martin Scorsese<br>
+          Distribuida por : Paramount Pictures<br>
+          Adaptado de : El lobo de Wall Street<br>
+          Taquilla : 406,9 millones de dólares<br>
+          Compañías productoras : Red Granite Pictures ; Appian Way Productions ; Sikelia Productions ; EMJAG Productions</p>
+        <p class="card-text"><small class="text-body-secondary">Duracion: 3 horas </small></p>
+      </div>
+    </div>
+  </div>
+  <br>
+  <br>
+  <div class="card-group">
+    <div class="card">
+      <img src="img/ojos.jpeg" class="card-img" alt="...">
+      <div class="card-body">
+        <h5 class="card-title">Card title</h5>
+        <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+        <p class="card-text"><small class="text-body-secondary">Last updated 3 mins ago</small></p>
+      </div>
+    </div>
+    <div class="card">
+      <img src="img/father.jpg" class="card-img" alt="...">
+      <div class="card-body">
+        <h5 class="card-title">Card title</h5>
+        <p class="card-text">This card has supporting text below as a natural lead-in to additional content.</p>
+        <p class="card-text"><small class="text-body-secondary">Last updated 3 mins ago</small></p>
+      </div>
+    </div>
+    </div>
+  </div>
+  <br>
+  <br>
+  <div class="card-group">
+    <div class="card">
+      <img src="img/casablanca.jpeg" class="card-img-top" alt="...">
+      <div class="card-body">
+        <h5 class="card-title">Card title</h5>
+        <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+        <p class="card-text"><small class="text-body-secondary">Last updated 3 mins ago</small></p>
+      </div>
+    </div>
+    <div class="card">
+      <img src="img/the shaw.jpg" class="card-img-top" alt="...">
+      <div class="card-body">
+        <h5 class="card-title">Card title</h5>
+        <p class="card-text">This card has supporting text below as a natural lead-in to additional content.</p>
+        <p class="card-text"><small class="text-body-secondary">Last updated 3 mins ago</small></p>
+      </div>
+    </div>
+    <div class="card">
+      <img src="img/taxi.cHJkLWVtcy1hc3NldHMvbW92aWVzLzg3YmYxNDM4LTZiMWEtNGJkYi04ZmRjLTEyZTNhZWY4NzZhYy5qcGc=" class="card-img-top" alt="...">
+      <div class="card-body">
+        <h5 class="card-title">Card title</h5>
+        <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This card has even longer content than the first to show that equal height action.</p>
+        <p class="card-text"><small class="text-body-secondary">Last updated 3 mins ago</small></p>
+      </div>
+    </div>
+  </div>
+  <br>
+  <br>
+  <div class="card-group">
+    <div class="card">
+      <img src="img/la la.jpeg" class="card-img-top" alt="...">
+      <div class="card-body">
+        <h5 class="card-title">Card title</h5>
+        <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+        <p class="card-text"><small class="text-body-secondary">Last updated 3 mins ago</small></p>
+      </div>
+    </div>
+    <div class="card">
+      <img src="img/Les-miserables-movie-poster1.jpg" class="card-img-top" alt="...">
+      <div class="card-body">
+        <h5 class="card-title">Card title</h5>
+        <p class="card-text">This card has supporting text below as a natural lead-in to additional content.</p>
+        <p class="card-text"><small class="text-body-secondary">Last updated 3 mins ago</small></p>
+      </div>
+    </div>
+    <div class="card">
+      <img src="img/the rocky.jpg" class="card-img-top" alt="...">
+      <div class="card-body">
+        <h5 class="card-title">Card title</h5>
+        <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This card has even longer content than the first to show that equal height action.</p>
+        <p class="card-text"><small class="text-body-secondary">Last updated 3 mins ago</small></p>
+      </div>
+    </div>
+  </div>
+</section>
+<section>
+  <div class="contenedor2" id="Actores">
+    <h1> Actores</h1>
+
+    <div class="row row-cols-1 row-cols-md-2 g-4">
+      <div class="col">
+        <div class="card">
+          <img src="img actores/michael-j-fox_300x300.jpg" class="card-imge" alt="...">
+          <div class="card-body">
+            <h5 class="card-title">Micahel j.fox </j></h5>
+            <p class="card-text">Michael Andrew Fox OC, conocido profesionalmente como Michael J. Fox, es un activista y actor retirado canadiense y estadounidense. Comenzó su carrera como actor infantil en la década de 1970 y saltó a la fama interpretando a Alex P. Keaton en la comedia de NBC Family Ties y a Marty McFly en la trilogía cinematográfica de Regreso al futuro. Wikipedia
+              Nacido : 9 de junio de 1961 (63 años), Edmonton, Canadá
+              Esposa : Tracy Pollan (m. 1988)
+              Altura : 1,63 m
+              Hijos : Sam Michael Fox , Aquinnah Kathleen Fox , Schuyler Frances Fox y Esmé Annabelle Fox
+              Padres : William Fox , Phyllis Piper
+              Hermanos : Steven Fox , Kelli Fox , Karen Fox , Jacki Fox</p>
+          </div>
+        </div>
+      </div>
+      <div class="col">
+        <div class="card">
+          <img src="img actores/crysto.jpeg" class="card-imge" alt="...">
+          <div class="card-body">
+            <h5 class="card-title">Christopher Allen Lloyd</h5>
+            <p class="card-text">Christopher Allen Lloyd es un actor estadounidense. Ha aparecido en muchas producciones teatrales, películas y programas de televisión desde la década de 1960. Es conocido por interpretar al Dr. Emmett "Doc" Brown en la trilogía Regreso al futuro y a Jim Ignatowski en la serie de comedia Taxi, por la que ganó dos premios Emmy. Wikipedia
+              Nacido : 22 de octubre de 1938 (85 años), Stamford, Connecticut, Estados Unidos
+              Cónyuge : Lisa Loiacono (m. 2016) · Ver más
+              Altura : 1,85 m
+              Hermanos : Sam Lloyd Sr. , Ruth Lloyd Scott Ax , Donald L. Mygatt , Adele L. Kinney , Antoinette L. Mygatt Lucas
+              Padres : Ruth Lapham , Samuel R. Lloyd</p>
+          </div>
+        </div>
+      </div>
+      <div class="col">
+        <div class="card">
+          <img src="img actores/jim_carrey.jpg" class="card-imge" alt="...">
+          <div class="card-body">
+            <h5 class="card-title">James Eugene Carrey</h5>
+            <p class="card-text"></p>James Eugene Carrey es un actor y comediante canadiense y estadounidense conocido por sus enérgicas actuaciones de comedia física. Wikipedia
+            Nacido : 17 de enero de 1962 (62 años), Newmarket, Canadá
+            Esposa : Lauren Holly (m. 1996-1997), Melissa Womer (m. 1987-1995)
+            Niños : Jane Erin Carrey
+            Altura : 1,88 m
+            Hermanos : John Carrey , Rita Carrey , Patricia Carrey Fournier
+            Ciudadanía : : Canadá ; Estados Unidos ;.</p>
+          </div>
+        </div>
+      </div>
+      <div class="col">
+        <div class="card">
+          <img src="img actores/DHS-_Ed_Harris.webp" class="card-imge" alt="...">
+          <div class="card-body">
+            <h5 class="card-title">Card title</h5>
+            <p class="card-text">Edward Allen Harris es un actor y cineasta estadounidense. Sus actuaciones en Apollo 13, The Truman Show, Pollock y The Hours le valieron elogios de la crítica y nominaciones al Oscar. Wikipedia
+              Nacido : 28 de noviembre de 1950 (73 años), Hospital Englewood, Englewood, Nueva Jersey, Estados Unidos
+              Esposa : Amy Madigan (m. 1983)
+              Altura : 1,75 m
+              Niños : Lily Dolores Harris
+              Padres : Robert L. Harris , Margaret Harris
+              Hermanos : Spencer Harris , Robert Harris</p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <br>
+    <br>
+    <div class="row row-cols-1 row-cols-md-2 g-4">
+      <div class="col">
+        <div class="card">
+          <img src="img actores/leo.jpeg" class="card-imge" alt="...">
+          <div class="card-body">
+            <h5 class="card-title">Leonardo Wilhelm DiCaprio</h5>
+            <p class="card-text">Leonardo Wilhelm DiCaprio es un actor y productor de cine estadounidense. Conocido por su trabajo en películas biográficas y de época, ha recibido numerosos galardones, entre ellos un premio de la Academia, un premio de la Academia Británica de Cine y tres Globos de Oro. Wikipedia
+              Nacido : 11 de noviembre de 1974 (49 años), Los Ángeles, California, Estados Unidos
+              Próxima película : La batalla de Baktan Cross
+              Altura : 1,83 m
+              Padres : George DiCaprio , Irmelin Indenbirken
+              Organizaciones : Appian Way Productions; Fundación Leonardo DiCaprio
+              Título : Mensajero de la Paz de las Naciones Unidas (designado en 2014)
+              .</p>
+          </div>
+        </div>
+      </div>
+      <div class="col">
+        <div class="card">
+          <img src="img actores/jhon.webp" class="card-imge" alt="...">
+          <div class="card-body">
+            <h5 class="card-title">Jonah Hill </h5>
+            <p class="card-text">Jonah Hill es un actor, guionista, productor y director estadounidense. Entre los reconocimientos que ha recibido se incluyen nominaciones a dos premios Óscar, un premio BAFTA y dos Globos de Oro. Wikipedia
+              Nacido : 20 de diciembre de 1983 (40 años), Los Ángeles, California, Estados Unidos
+              Altura : 1,7 m
+              Niños : 1
+              Padres : Richard Feldstein y Sharon Lyn Chalkin
+              Hermanos : Beanie Feldstein y Jordan Feldstein
+              Premios : Lista completa.</p>
+          </div>
+        </div>
+      </div>
+      <div class="col">
+        <div class="card">
+          <img src="img actores/Soledad-Villamil_2-jpg.webp" class="card-imge" alt="...">
+          <div class="card-body">
+            <h5 class="card-title">Soledad Villamil</h5>
+            <p class="card-text">Soledad Villamil es una actriz de cine y televisión y cantante argentina. Ha ganado dos premios Carlos Gardel, el equivalente argentino de los premios Grammy estadounidenses y los premios BRIT británicos, además del premio Goya a la mejor actriz revelación por la película El secreto de sus ojos. Wikipedia
+              Nacido : 19 de junio de 1969 (55 años), La Plata, Argentina
+              Esposa : Federico Olivera (m. 1997)
+              Albums: Morir de Amor, Ni Antes Ni Después, Canción de Viaje, Canta
+              Children: Violeta Olivera, Clara Olivera
+              Parents: Hugo Sergio Villamil
+              </p>
+          </div>
+        </div>
+      </div>
+      <div class="col">
+        <div class="card">
+          <img src="img actores/ricardo.jpeg" class="card-imge" alt="...">
+          <div class="card-body">
+            <h5 class="card-title">Ricardo Alberto Darín </h5>
+            <p class="card-text">Ricardo Alberto Darín es un actor, director de cine y productor cinematográfico argentino, considerado uno de los mejores y más prolíficos actores del cine argentino. Wikipedia
+              Nacido : 16 de enero de 1957 (67 años), Buenos Aires, Argentina
+              Spouse: Florencia Bas (m. 1988)
+              Children: Chino Darín, Clara Darín
+              Premios : Premio Goya al Mejor Actor , Premio Platino Honorífico · Ver más
+              Altura : 1,72 m
+              .</p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <br>
+    <br>
+    <div class="row row-cols-1 row-cols-md-2 g-4">
+      <div class="col">
+        <div class="card">
+          <img src="img actores/marlon-brando-e1718903857619.jpg" class="card-imge" alt="...">
+          <div class="card-body">
+            <h5 class="card-title">Marlon Brando Jr</h5>
+            <p class="card-text">Marlon Brando Jr. fue un actor estadounidense. Recibió numerosos galardones a lo largo de su carrera, que se extendió a lo largo de seis décadas, incluidos dos premios de la Academia, tres premios de la Academia Británica de Cine, un premio del Festival de Cine de Cannes, dos premios Globo de Oro y un premio Primetime Emmy. Wikipedia
+              Nacido : 3 de abril de 1924, Omaha, Nebraska, Estados Unidos
+              Falleció : 1 de julio de 2004 (80 años), Ronald Reagan UCLA Medical Center, Los Ángeles, California, Estados Unidos
+              Cónyuge : Tarita Teriipaia (m. 1962-1972), Movita Castaneda (m. 1960-1968), Anna Kashfi (m. 1957-1959)
+              Niños : Christian Brando , Cheyenne Brando Ver más
+              Altura : 1,75 m
+              Nietos : Shane Brando , Tuki Brando , Prudence Brando.</p>
+          </div>
+        </div>
+      </div>
+      <div class="col">
+        <div class="card">
+          <img src="img actores/al pacino.jpeg" class="card-imge" alt="...">
+          <div class="card-body">
+            <h5 class="card-title">Alfredo James Pacino </h5>
+            <p class="card-text">Alfredo James Pacino es un actor estadounidense. Considerado uno de los actores más grandes e influyentes del siglo XX, Pacino ha recibido numerosos galardones, entre ellos un premio de la Academia, dos premios Tony y dos premios Primetime Emmy, logrando la Triple Corona de la Actuación. Wikipedia
+              Nacido : 25 de abril de 1940 (84 años), East Harlem, Nueva York, Estados Unidos
+              Hijos : Julie Marie Pacino , Olivia Pacino , Anton James Pacino
+              Pareja(s) : Beverly D'Angelo (1997-2003); Lucila Polak (2008-2018)
+              Altura : 1,68 m
+              Padres : Sal Pacino , Rose Gerard Pacino
+              Hermanos : Roberta Pacino , Desiree Pacino , Paula Pacino , Josette Pacino
+              .</p>
+          </div>
+        </div>
+      </div>
+      <div class="col">
+        <div class="card">
+          <img src="img actores/humbert.jpeg" class="card-imge" alt="...">
+          <div class="card-body">
+            <h5 class="card-title">Humphrey Bogart</h5>
+            <p class="card-text">Humphrey DeForest Bogart, apodado Bogie, fue un actor estadounidense. Sus actuaciones en películas clásicas del cine de Hollywood lo convirtieron en un icono cultural estadounidense. En 1999, el American Film Institute seleccionó a Bogart como la mayor estrella masculina del cine clásico estadounidense. Bogart comenzó a actuar en espectáculos de Broadway. Wikipedia
+              Nacido : 25 de diciembre de 1899, Nueva York, Nueva York, Estados Unidos
+              Murió : 14 de enero de 1957 (57 años), Los Ángeles, California, Estados Unidos
+              Esposa : Lauren Bacall (m. 1945–1957) · Ver más
+              Altura : 1,73 m
+              Hijos : Stephen Humphrey Bogart , Leslie Howard Bogart
+              Nietos : Brooke Bogart , Jamie Bogart , Richard Bogart.</p>
+          </div>
+        </div>
+      </div>
+      <div class="col">
+        <div class="card">
+          <img src="img actores/Ingrid Bergman.jpeg" class="card-imge" alt="...">
+          <div class="card-body">
+            <h5 class="card-title">Ingrid Bergman</h5>
+            <p class="card-text">Ingrid Bergman fue una actriz sueca. Con una carrera que abarcó cinco décadas, a Bergman se la suele considerar una de las figuras cinematográficas más influyentes de la historia del cine. Wikipedia
+              Nacido : 29 de agosto de 1915, Estocolmo, Suecia
+              Murió : 29 de agosto de 1982 (67 años), Chelsea, Londres, Reino Unido
+              Niños : Isabella Rossellini , Pia Lindström , Ingrid Rossellini , Robin Rossellini
+              Esposa : Lars Schmidt (m. 1958-1975), Roberto Rossellini (m. 1950-1957), Petter Lindström (m. 1937-1950)
+              Altura : 1,75 m
+              Nietos : Elettra Rossellini Wiedemann , Nick Daly , Justin Daly , Francesca Aborn , Roberto Rossellini , Tommaso Rossellini
+              </p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <br>
+    <br>
+    <div class="row row-cols-1 row-cols-md-2 g-4">
+      <div class="col">
+        <div class="card">
+          <img src="img actores/tim.jpeg" class="card-imge" alt="...">
+          <div class="card-body">
+            <h5 class="card-title">Timothy Francis Robbins </h5>
+            <p class="card-text">Timothy Francis Robbins es un actor estadounidense. Es más conocido por interpretar a Andy Dufresne en la película Cadena perpetua y a Jacob Singer en La escalera de Jacob, además de ganar un premio de la Academia y un Globo de Oro por su papel en Río místico y otro Globo de Oro por El jugador. Wikipedia
+              Nacido : 16 de octubre de 1958 (66 años), West Covina, California, Estados Unidos
+              Altura : 1,96 m
+              Hijos : Miles Robbins , Jack Henry Robbins
+              Padres : Gil Robbins , Mary Bledsoe Robbins
+              Hermanos : David Robbins , Adele Robbins , Gabrielle Robbins
+              Premios : Lista completa</p>
+          </div>
+        </div>
+      </div>
+      <div class="col">
+        <div class="card">
+          <img src="img actores/morgan.jpeg" class="card-imge" alt="...">
+          <div class="card-body">
+            <h5 class="card-title">Morgan Freeman</h5>
+            <p class="card-text">Morgan Freeman es un actor, productor y narrador estadounidense. A lo largo de una carrera que abarca cinco décadas, ha recibido numerosos galardones, entre ellos un premio de la Academia, un Globo de Oro y un premio del Sindicato de Actores de Cine, además de una nominación a un premio Tony. Wikipedia
+              Nacido : 1 de junio de 1937 (87 años), Memphis, Tennessee, Estados Unidos
+              Esposa : Myrna Colley-Lee (1984-2010), Jeanette Adair Bradshaw (1967-1979)
+              Nietos : Donovan Lee Freeman , E'Dena Hines , Joshua Caleb Freeman y Alfonso Rene Freeman II
+              Hijos : Alfonso Freeman , Morgana Freeman , Saifoulaye Freeman , Deena Freeman
+              Altura : 1,88 m
+              Padres : Morgan Porterfield Freeman , Mayme Edna Revere
+              </p>
+          </div>
+        </div>
+      </div>
+      <div class="col">
+        <div class="card">
+          <img src="img actores/robert.jpeg" class="card-imge" alt="...">
+          <div class="card-body">
+            <h5 class="card-title">Robert Anthony De Niro </h5>
+            <p class="card-text">Robert Anthony De Niro es un actor y productor de cine estadounidense. Conocido por sus colaboraciones con Martin Scorsese, se le considera uno de los actores más grandes e influyentes de su generación. Wikipedia
+              Nacido : 17 de agosto de 1943 (81 años), Manhattan, Nueva York, Estados Unidos
+              Esposa : Grace Hightower (m. 1997-2018), Diahnne Abbott (m. 1976-1988)
+              Niños : Drena De Niro , Raphael De Niro , Julian Henry De Niro , Elliot De Niro , Aaron Kendrick De Niro
+              Próxima película : Alto Knights
+              Altura : 1,77 m
+              Padres : Robert De Niro Sr. , Almirante de Virginia</p>
+          </div>
+        </div>
+      </div>
+      <div class="col">
+        <div class="card">
+          <img src="img actores/foster-news.webp" class="card-imge" alt="...">
+          <div class="card-body">
+            <h5 class="card-title">Alicia Christian</h5>
+            <p class="card-text">Alicia Christian "Jodie" Foster es una actriz y cineasta estadounidense. Ha recibido numerosos galardones, entre ellos dos premios de la Academia, tres premios BAFTA, tres premios Globo de Oro y un premio Primetime Emmy. Wikipedia
+              Nacido : 19 de noviembre de 1962 (61 años), Los Ángeles, California, Estados Unidos
+              Esposa : Alexandra Hedison (m. 2014)
+              Niños : Kit Bernard Foster , Charles Bernard Foster
+              Altura : 1,6 m
+              Padres : Lucius Fisher Foster III , Evelyn Ella Almond.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <br>
+    <br>
+    <div class="row row-cols-1 row-cols-md-2 g-4">
+      <div class="col">
+        <div class="card">
+          <img src="img actores/ryan.jpeg" class="card-imge" alt="...">
+          <div class="card-body">
+            <h5 class="card-title">Ryan Thomas Gosling</h5>
+            <p class="card-text">Ryan Thomas Gosling es un actor canadiense. Destacado tanto en películas independientes como en producciones de grandes estudios, sus películas han recaudado más de 2 mil millones de dólares en todo el mundo. Wikipedia
+              Nacido : 12 de noviembre de 1980 (43 años), Londres, Canadá
+              Altura : 1,84 m
+              Próxima película : Proyecto Ave María
+              Socio : Eva Mendes (2011)
+              Padres : Thomas Gosling , Donna Gosling
+              Hermanos : Mandi Gosling</p>
+          </div>
+        </div>
+      </div>
+      <div class="col">
+        <div class="card">
+          <img src="img actores/Emma Stone.jpeg" class="card-imge" alt="...">
+          <div class="card-body">
+            <h5 class="card-title">Emily Jean </h5>
+            <p class="card-text">Emily Jean "Emma" Stone es una actriz y productora estadounidense. Entre sus galardones se incluyen dos premios Óscar, dos premios de la Academia Británica de Cine y dos Globos de Oro. En 2017, fue la actriz mejor pagada del mundo y la revista Time la nombró una de las 100 personas más influyentes del mundo. Wikipedia
+              Nacido : 6 de noviembre de 1988 (35 años), Scottsdale, Arizona, Estados Unidos
+              Esposa : Dave McCary (m. 2020)
+              Próxima película : Bugonia
+              Altura : 1,68 m
+              Premios : Premio Óscar a la mejor actriz principal Ver más
+              Padres : Krista Stone , Jeff Stone</p>
+          </div>
+        </div>
+      </div>
+      <div class="col">
+        <div class="card">
+          <img src="img actores/hugh.jpeg" class="card-imge" alt="...">
+          <div class="card-body">
+            <h5 class="card-title">Hugh Michael Jackman</h5>
+            <p class="card-text">Hugh Michael Jackman AC es un actor australiano. Jackman comenzó su carrera en el teatro y la televisión y obtuvo su papel decisivo como Wolverine en la franquicia cinematográfica de X-Men y en el Universo Cinematográfico de Marvel, desde X-Men hasta Deadpool y Wolverine. Wikipedia
+              Nacido : 12 de octubre de 1968 (56 años), Sydney, Australia
+              Esposa : Deborra-Lee Furness (m. 1996–2023)
+              Hijos : Oscar Maximilian Jackman , Ava Eliot Jackman
+              Próxima película : Three Bags Full: A Sheep Detective Movie
+              Padres : Christopher John Jackman y Grace McNeil
+              Hermanos : Ralph Jackman , Sonya Jackman , Zoe Jackman , Ian Jackman</p>
+          </div>
+        </div>
+      </div>
+      <div class="col">
+        <div class="card">
+          <img src="img actores/anne.jpeg" class="card-imge" alt="...">
+          <div class="card-body">
+            <h5 class="card-title">Anne Jacqueline Hathaway</h5>
+            <p class="card-text">Anne Jacqueline Hathaway es una actriz estadounidense. Entre sus galardones se incluyen un premio de la Academia, un premio de la Academia Británica de Cine, un Globo de Oro y un premio Primetime Emmy. Sus películas han recaudado más de 6.800 millones de dólares en todo el mundo y apareció en la lista Forbes Celebrity 100 en 2009. Wikipedia
+              Nacido : 12 de noviembre de 1982 (41 años), Brooklyn, Nueva York, Estados Unidos
+              Esposa : Adam Shulman (m. 2012)
+              Altura : 1,73 m
+              Próxima película : Flowervale Street
+              Padres : Kate McCauley Hathaway , Gerald Hathaway
+              Hermanos : Michael Hathaway , Thomas Hathaway</p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <br>
+    <br>
+    <div class="row row-cols-1 row-cols-md-2 g-4">
+      <div class="col">
+        <div class="card">
+          <img src="img actores/timc.jpeg" class="card-imge" alt="...">
+          <div class="card-body">
+            <h5 class="card-title">Timothy James Curry</h5>
+            <p class="card-text">Timothy James Curry es un actor y cantante inglés. Saltó a la fama como el Dr. Frank-N-Furter en la película The Rocky Horror Picture Show, repitiendo el papel que había interpretado en las producciones teatrales musicales de The Rocky Horror Show en Londres en 1973, Los Ángeles en 1974 y Broadway en 1975. Wikipedia
+              Nacido : 19 de abril de 1946 (78 años), Grappenhall, Warrington, Reino Unido
+              Altura : 1,75 m
+              Padres : Patricia Curry , James Curry
+              Hermanos : Judy Curry.</p>
+          </div>
+        </div>
+      </div>
+      <div class="col">
+        <div class="card">
+          <img src="img actores/susan.jpeg" class="card-imge" alt="...">
+          <div class="card-body">
+            <h5 class="card-title">Susan Abigail Sarandon</h5>
+            <p class="card-text">Susan Abigail Sarandon es una actriz estadounidense. Ha recibido varios galardones, entre ellos un premio de la Academia, un premio de la Academia Británica de Cine y un premio del Sindicato de Actores de Cine, además de nominaciones a un premio Daytime Emmy, seis premios Primetime Emmy y nueve premios Globo de Oro. Wikipedia
+              Nacido : 4 de octubre de 1946 (78 años), Jackson Heights, Nueva York, Estados Unidos
+              Esposa : Chris Sarandon (m. 1967–1979)
+              Niños : Eva Amurri , Miles Robbins , Jack Henry Robbins
+              Hermanos : Terry Tomalin , Amanda Tomalin , Missy Tomalin · Ver más
+              Altura : 1,65 m
+              Nietos : Mayor James Martino , Mateo Antoni Martino</p>
+          </div>
+        </div>
+      </div>
+      
+  </div>
+</section>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+  <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.4.1/dist/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+
+<footer>
+  <p>Copyright &copy; 2024 MariaTrejos. Todos los derechos reservados.</p>
+</footer>
+</body>
+</html>
